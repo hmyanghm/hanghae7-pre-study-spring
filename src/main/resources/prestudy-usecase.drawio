@@ -7,11 +7,6 @@
         <mxCell id="j2gXQujpd4SuEo7q7hQ5-22" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="j2gXQujpd4SuEo7q7hQ5-0" target="j2gXQujpd4SuEo7q7hQ5-4">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="j2gXQujpd4SuEo7q7hQ5-30" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="j2gXQujpd4SuEo7q7hQ5-0">
-          <mxGeometry relative="1" as="geometry">
-            <mxPoint x="125" y="400" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
         <mxCell id="j2gXQujpd4SuEo7q7hQ5-0" value="비회원" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
           <mxGeometry x="110" y="90" width="30" height="60" as="geometry" />
         </mxCell>
