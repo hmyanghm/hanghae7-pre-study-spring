@@ -1,7 +1,2 @@
 # 👋 Intro
-
-
-
-{% content-ref url="broken-reference" %}
-[Broken link](broken-reference)
-{% endcontent-ref %}
+https://hanghae-pre-study.gitbook.io/7-pre-study-api
