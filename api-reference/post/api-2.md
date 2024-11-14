@@ -4,7 +4,7 @@
 
 ## Create a new user
 
-<mark style="color:green;">`POST`</mark> `/comment/register`
+<mark style="color:green;">`POST`</mark> `/{boardId}/comment/register`
 
 \<Description of the endpoint>
 
@@ -14,6 +14,12 @@
 | ------------- | ------------------ |
 | Content-Type  | `application/json` |
 | Authorization | `Bearer <token>`   |
+
+**Parameter**
+
+| Name    | Type    | Description |
+| ------- | ------- | ----------- |
+| boardId | integer | 게시판 id      |
 
 **Body**
 

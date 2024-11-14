@@ -4,7 +4,7 @@
 
 ## Create a new user
 
-<mark style="color:green;">`PATCH`</mark> `/comment/update/{id}`
+<mark style="color:green;">`PATCH`</mark> `/{boardId}/comment/update/{id}`
 
 \<Description of the endpoint>
 
@@ -17,9 +17,10 @@
 
 **Parameter**
 
-| Name | Type    | Description |
-| ---- | ------- | ----------- |
-| `id` | integer | 댓글 id       |
+| Name    | Type    | Description |
+| ------- | ------- | ----------- |
+| boardId | integer | 게시판 id      |
+| `id`    | integer | 댓글 id       |
 
 **Body**
 
