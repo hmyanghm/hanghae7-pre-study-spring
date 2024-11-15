@@ -4,7 +4,7 @@
 
 ## Create a new user
 
-<mark style="color:green;">`POST`</mark> `/comment/delete/{id}`
+<mark style="color:green;">`POST`</mark> `/{boardId}/comment/delete/{id}`
 
 \<Description of the endpoint>
 
@@ -15,12 +15,12 @@
 | Content-Type  | `application/json` |
 | Authorization | `Bearer <token>`   |
 
-**Body**
+**Parameter**
 
-| Name   | Type   | Description      |
-| ------ | ------ | ---------------- |
-| `name` | string | Name of the user |
-| `age`  | number | Age of the user  |
+| Name    | Type    | Description |
+| ------- | ------- | ----------- |
+| boardId | integer | 게시판 id      |
+| `id`    | integer | 댓글 id       |
 
 **Response**
 
@@ -28,9 +28,9 @@
 {% tab title="200" %}
 ```json
 {
-  "id": 1,
-  "name": "John",
-  "age": 30
+  "code": 200,
+  "message": "OK",
+  "data": "SUCCESS"
 }
 ```
 {% endtab %}
@@ -38,7 +38,9 @@
 {% tab title="400" %}
 ```json
 {
-  "error": "Invalid request"
+  "code": 400,
+  "message": "Bad Request",
+  "data": "ERROR"
 }
 ```
 {% endtab %}

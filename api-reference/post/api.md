@@ -17,10 +17,10 @@
 
 **Body**
 
-| Name   | Type   | Description      |
-| ------ | ------ | ---------------- |
-| `name` | string | Name of the user |
-| `age`  | number | Age of the user  |
+| Name      | Type   | Description |
+| --------- | ------ | ----------- |
+| `title`   | string | 게시글 제목      |
+| `content` | string | 게시글 내용      |
 
 **Response**
 
@@ -28,9 +28,9 @@
 {% tab title="200" %}
 ```json
 {
-  "id": 1,
-  "name": "John",
-  "age": 30
+  "code": 200,
+  "message": "OK",
+  "data": "SUCCESS"
 }
 ```
 {% endtab %}
@@ -38,7 +38,9 @@
 {% tab title="400" %}
 ```json
 {
-  "error": "Invalid request"
+  "code": 400,
+  "message": "Bad Request",
+  "data": "ERROR"
 }
 ```
 {% endtab %}

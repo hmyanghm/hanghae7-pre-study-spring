@@ -67,7 +67,9 @@
 {% tab title="400" %}
 ```json
 {
-  "error": "Invalid request"
+  "code": 400,
+  "message": "Bad Request",
+  "data": "ERROR"
 }
 ```
 {% endtab %}
