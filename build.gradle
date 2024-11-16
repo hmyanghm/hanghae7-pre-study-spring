@@ -25,9 +25,15 @@ repositories {
 
 dependencies {
 	implementation 'org.springframework.boot:spring-boot-starter-web'
+	implementation 'org.springframework.boot:spring-boot-starter-data-jpa:3.3.5'  // JPA
 	compileOnly 'org.projectlombok:lombok'
 	annotationProcessor 'org.projectlombok:lombok'
+	implementation 'org.springdoc:springdoc-openapi-starter-webmvc-ui:2.0.2'  // Swagger
+	implementation 'mysql:mysql-connector-java:8.0.33' // MySQL
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
+	testImplementation platform('org.junit:junit-bom:5.9.3')  // JUnit 5 BOM (Bill of Materials)으로 버전 관리
+	testImplementation 'org.junit.jupiter:junit-jupiter'  // JUnit 5 Jupiter (JUnit 5의 주요 모듈)
+	testImplementation 'org.mockito:mockito-core:5.5.0'  // JUnit 5와 함께 사용하는 경우
 	testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
 }
 
