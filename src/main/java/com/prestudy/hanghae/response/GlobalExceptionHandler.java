@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.RestControllerAdvice;
 @RestControllerAdvice
 public class GlobalExceptionHandler {
     // 존재하지 않는 요청에 대한 예외
-    @ExceptionHandler(value = {Exception.class, Exception.class})
+    @ExceptionHandler(value = {NoPageFoundException.class})
     public ApiResponse<?> handleNoPageFoundException(Exception e) {
         log.error("GlobalExceptionHandler catch NoHandlerFoundException : {}", e.getMessage());
         return ApiResponse.fail(new CustomException(ErrorCode.NOT_FOUND_END_POINT));

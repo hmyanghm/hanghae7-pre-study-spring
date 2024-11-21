@@ -29,7 +29,7 @@ dependencies {
 	compileOnly 'org.projectlombok:lombok'
 	annotationProcessor 'org.projectlombok:lombok'
 	implementation 'org.springdoc:springdoc-openapi-starter-webmvc-ui:2.0.2'  // Swagger
-	implementation 'mysql:mysql-connector-java:8.0.33' // MySQL
+	implementation 'com.mysql:mysql-connector-j:8.3.0'
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
 	testImplementation platform('org.junit:junit-bom:5.9.3')  // JUnit 5 BOM (Bill of Materials)으로 버전 관리
 	testImplementation 'org.junit.jupiter:junit-jupiter'  // JUnit 5 Jupiter (JUnit 5의 주요 모듈)

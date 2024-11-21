@@ -1,30 +1,27 @@
 package com.prestudy.hanghae.board;
 
-import io.swagger.v3.oas.annotations.OpenAPIDefinition;
+import com.prestudy.hanghae.dto.request.BoardRequest;
+import com.prestudy.hanghae.response.ApiResponse;
 import io.swagger.v3.oas.annotations.Operation;
-import io.swagger.v3.oas.annotations.info.Info;
-import io.swagger.v3.oas.annotations.responses.ApiResponse;
+import io.swagger.v3.oas.annotations.tags.Tag;
 import lombok.RequiredArgsConstructor;
-import lombok.Value;
 import lombok.extern.slf4j.Slf4j;
-import org.springframework.http.MediaType;
-import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @RequiredArgsConstructor
 @Slf4j
-@OpenAPIDefinition(
-        info = @Info(title = "Board API 명세서", version = "v1")
-)
+@Tag(name = "Board API 명세서")
 public class BoardController {
 
-    @PostMapping(value = "/api/v1/board/register", consumes = MediaType.APPLICATION_JSON_VALUE)
-    @Operation(summary = "게시판 생성")
-    public ResponseEntity<?> register() {
+    private final BoardService boardService;
 
-        return ResponseEntity.ok().build();
+    @PostMapping(value = "/api/v1/board/register")
+    @Operation(summary = "게시판 생성")
+    public ApiResponse<?> register(@RequestBody BoardRequest boardRequest) {
+        return ApiResponse.created(boardService.register(boardRequest));
     }
 
 }
