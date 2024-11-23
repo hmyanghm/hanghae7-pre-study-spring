@@ -1,4 +1,4 @@
-package com.prestudy.hanghae.response;
+package com.prestudy.hanghae.common.exception;
 
 import lombok.Getter;
 import lombok.RequiredArgsConstructor;

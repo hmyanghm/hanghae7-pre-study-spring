@@ -1,4 +1,4 @@
-package com.prestudy.hanghae.config;
+package com.prestudy.hanghae.common.config;
 
 import io.swagger.v3.oas.models.Components;
 import io.swagger.v3.oas.models.OpenAPI;

@@ -1,4 +1,4 @@
 package com.prestudy.hanghae.dto.request;
 
-public class CommentRequest {
+public class MemberReqDto {
 }

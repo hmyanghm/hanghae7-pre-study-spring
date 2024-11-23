@@ -1,6 +1,7 @@
 package com.prestudy.hanghae.entity;
 
 import jakarta.persistence.*;
+import jakarta.validation.constraints.NotNull;
 import lombok.*;
 import lombok.experimental.SuperBuilder;
 
@@ -19,8 +20,9 @@ public class Board {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
 
-    @Column(name = "member_id")
-    private long memberId;
+    @ManyToOne @NotNull
+    @JoinColumn(name="member_id", foreignKey=@ForeignKey(value=ConstraintMode.NO_CONSTRAINT))
+    private Member member;
 
     @Column(name = "title")
     private String title;
@@ -36,4 +38,5 @@ public class Board {
 
     @Column(name = "is_use")
     private boolean isUse;
+
 }

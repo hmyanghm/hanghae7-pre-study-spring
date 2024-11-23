@@ -1,4 +1,4 @@
-package com.prestudy.hanghae.response;
+package com.prestudy.hanghae.common.exception;
 
 import jakarta.validation.constraints.NotNull;
 import lombok.Getter;
